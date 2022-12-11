@@ -1,0 +1,491 @@
+/* Adding style to the body of the website */
+
+/* Doing a global reset for all elements of the website */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Setting the font family of the website and hiding the overflow to have a better display during animations */
+
+body {
+	font-family: "Segoe UI", "Tahoma", sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+/* Adding style to the divs used to design the structure of the website (Note: The viewport is the viewable screen)
+
+/* Making the direction of the vertical container vertical to be able to place the horizontal containers one on top of each other */
+
+.vertical-screens {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Making the width of the horizontal containers three times the width of the viewport to be able to fit three screens one next to each other */
+
+.horizontal-screens {
+	display: flex;
+	justify-content: center;
+	width: 300vw;
+}
+
+/* Setting the height and width of the screens to the height and width of the viewport */
+
+.screen {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+
+/* Adding style to the divs used to design the structure of the screens of the website */
+
+/* Making the elements be justified with space in between to be able to place them evenly one next to each other */
+
+.top-part {
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	width: 100vw;
+}
+
+.top-part-with-button {
+	display: flex;
+	justify-content: space-between;
+	height: 30vh;
+	width: 100vw;
+}
+
+.bottom-part {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 15vh;
+	width: 100vw;
+}
+
+.bottom-part-with-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 30vh;
+	width: 100vw;
+}
+
+
+/* Adding style to the navigation buttons and corner triangles */
+
+.button {
+	display: flex;
+	height: 150px;
+	width: 150px;
+	margin: 25px;
+	border-radius: 50%;
+	font-size: 18pt;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	outline: 1px solid black;
+	transition: transform 0.3s;
+}
+
+/* Making the navigation buttons become bigger when the mouse hovers over them */
+
+.button:hover {
+	transform: scale(1.15);
+}
+
+.top-left-triangle {
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 100px 100px 0 0;
+	border-color: #D4AE7F transparent transparent transparent;
+}
+
+.top-right-triangle {
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 0 100px 100px 0;
+	border-color: transparent #D4AE7F transparent transparent;
+}
+
+.bottom-left-triangle {
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 100px 0 0 100px;
+	border-color: transparent transparent transparent #D4AE7F;
+}
+
+.bottom-right-triangle {
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 0 0 100px 100px;
+	border-color: transparent transparent #D4AE7F transparent;
+}
+
+/* Adding style to the home screen */
+
+#home-screen {
+	background-color: white;
+}
+
+.hobbies-button {
+	background-color: #A7E0E0;
+}
+
+.title-part {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40vh;
+	width: 100vw;
+}
+
+.info-button {
+	background-color: #F9E97A;
+}
+
+.home-message {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 30vh;
+	width: 45vw;
+}
+
+.welcome-text {
+	font-size: 36pt;
+	text-align: center;
+}
+
+.prompt-text {
+	font-size: 24pt;
+	text-align: center;
+}
+
+.sites-button {
+	background-color: #FFB141;
+}
+
+.music-button {
+	background-color: #CAE6E7;
+}
+
+
+/* Adding style to the info screen */
+
+#info-screen {
+	background-color: #F9E97A;
+}
+
+.info-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70vh;
+	width: 100vw;
+}
+
+.edgar-photo {
+	height: 500px;
+	width: 250px;
+	margin-left: 25vh;
+}
+
+.info-facts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 60vh;
+}
+
+.info-message {
+	font-size: 24pt;
+	margin-bottom: 5vh;
+	margin-left: 25px;
+}
+
+.fact-message {
+	display: flex;
+}
+
+.fact-text {
+	font-size: 18pt;
+	margin-left: 25px;
+	margin-right: 5px;
+}
+
+.box {
+	background-color: #D4AE7F;
+	outline: 1px solid black;
+	transition: transform 0.3s;
+}
+
+.box:hover {
+	transform: scale(1.15);
+}
+
+.box p {
+	font-size: 18pt;
+	padding: 2.5px;
+}
+
+.box-1 { width: 70px; }
+.box-2 { width: 55px; }
+.box-3 { width: 175px; }
+.box-4 { width: 150px; }
+.box-5 { width: 280px; }
+
+#box-1-text { visibility: hidden; }
+#box-2-text { visibility: hidden; }
+#box-3-text { visibility: hidden; }
+#box-4-text { visibility: hidden; }
+#box-5-text { visibility: hidden; }
+
+
+/* Adding style to the hobbies screen */
+
+#hobbies-screen {
+	background-color: #A7E0E0;
+}
+
+.hobbies-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 55vh;
+	width: 100vw;
+}
+
+.hobbies-activities {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 55vh;
+	margin-left: 25vh;
+}
+
+.hobbies-message {
+	font-size: 24pt;
+	margin-bottom: 5vh;
+}
+
+#hobby-photo {
+	height: 300px;
+	width: 500px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+#hobby-photo:hover {
+	transform: scale(1.15);
+}
+
+#hobby-description {
+	font-size: 18pt;
+	margin-right: 25vh;
+	background-color: #D4AE7F;
+	outline: 1px solid black;
+	padding: 2.5px;
+}
+
+.home-button {
+	background-color: white;
+}
+
+
+/* Adding style to the music screen */
+
+#music-screen {
+	background-color: #CAE6E7;
+}
+
+.music-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70vh;
+	width: 100vw;
+}
+
+#music-description {
+	font-size: 18pt;
+	margin-left: 25vh;
+	background-color: #D4AE7F;
+	outline: 1px solid black;
+	padding: 2.5px;
+	margin-right: 50px;
+	width: 1000px;
+}
+
+.music-recordings {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 55vh;
+	margin-right: 25vh;
+}
+
+.music-message {
+	font-size: 24pt;
+	margin-bottom: 5vh;
+}
+
+.recording-buttons-1 {
+	display: flex;
+	justify-content: center;
+}
+
+.recording-buttons-2 {
+	display: flex;
+	justify-content: center;
+}
+
+.reproduction-button {
+	display: flex;
+	height: 100px;
+	width: 100px;
+	margin: 25px;
+	font-size: 18pt;
+	cursor: pointer;
+	background-color: #D4AE7F;
+	justify-content: center;
+	align-items: center;
+	outline: 1px solid black;
+	transition: transform 0.3s;
+}
+
+.reproduction-button:hover {
+	transform: scale(1.15);
+}
+
+
+/* Adding style to the sites screen */
+
+#sites-screen {
+	background-color: #FFB141;
+}
+
+.sites-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70vh;
+	width: 100vw;
+}
+
+.sites-webpages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 60vh;
+	margin-left: 10vh;
+	margin-right: 25vh;
+}
+
+.sites-message {
+	font-size: 24pt;
+	height: 15vh;
+}
+
+.sites-links {
+	display: flex;
+	justify-content: space-between;
+	height: 45vh;
+	
+}
+
+.left-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 45vh;
+}
+
+.right-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 45vh;
+}
+
+.link-photo {
+	height: 150px;
+	width: 225px;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+.link-photo:hover {
+	transform: scale(1.15);
+}
+
+.sites-descriptions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 45vh;
+	width: 30vw;
+}
+
+.sites-descriptions p {
+	font-size: 18pt;
+	width: 450px;
+	padding: 2.5px;
+	background-color: #D4AE7F;
+	outline: 1px solid black;
+}
+
+.site-1-description {
+	align-self: flex-end;
+	margin-right: 50px;
+}
+
+.site-2-description {
+	margin-left: 50px;
+	text-align: right;
+}
+
+.site-3-description {
+	align-self: flex-end;
+	margin-right: 50px;
+}
+
+.site-4-description {
+	margin-left: 50px;
+	text-align: right;
+}
+
+/*
+
+.sites-descriptions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 45vh;
+}
+
+.sites-descriptions p {
+	font-size: 18pt;
+	width: 500px;
+	padding: 10px;
+}
+
+.site-1-description {
+	margin-right: 200px;
+}
+
+.site-2-description {
+	margin-left: 200px;
+}
+
+*/

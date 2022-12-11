@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Edgar's Portfolio </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<content class="vertical-screens">
+		<content class="horizontal-screens">
+			<div id="hobbies-screen" class="screen">
+				<div class="top-part">
+					<div class="top-left-triangle"></div>
+					<div class="top-right-triangle"></div>
+				</div>
+				<div class="hobbies-content">
+					<div class="hobbies-activities">
+						<p class="hobbies-message"> Click the image below repeatedly to see some of my favorite passtimes! </p>
+						<img src="Dogs.jpg" id="hobby-photo" onclick="changeHobby()"/>
+					</div>
+					<p id="hobby-description"> When I'm back home in Peru, I like to play and spend lots of time with my two dogs Leo and Klaus! </p>
+				</div>
+				<div class="bottom-part-with-button">
+					<div class="bottom-left-triangle"></div>
+					<a class="button home-button" onclick="scrollToScreen('home')"> Go Back </a>
+					<div class="bottom-right-triangle"></div>
+				</div>
+			</div>
+		</content>
+		<content class="horizontal-screens">
+			<div id="info-screen" class="screen">
+				<div class="top-part">
+					<div class="top-left-triangle"></div>
+					<div class="top-right-triangle"></div>
+				</div>
+				<div class="info-content">
+					<img src="Edgar Picture.jpeg" class="edgar-photo"/>
+					<div class="info-facts">
+						<p class="info-message"> Click the boxes below to learn stuff about me! </p>
+						<div class="fact-message">
+							<p class="fact-text"> Hello there! My name is </p>
+							<div class="box box-1" onclick="changeBox('box-1')"><p id="box-1-text"> Edgar </p></div>
+						</div>
+						<div class="fact-message">
+							<p class="fact-text"> I'm a coder and musician from </p>
+							<div class="box box-2" onclick="changeBox('box-2')"><p id="box-2-text"> Peru </p></div>
+						</div>
+						<div class="fact-message">
+							<p class="fact-text"> I'm a student at </p>
+							<div class="box box-3" onclick="changeBox('box-3')"><p id="box-3-text"> NYU Abu Dhabi </p></div>
+						</div>
+						<div class="fact-message">
+							<p class="fact-text"> I'm majoring in </p>
+							<div class="box box-4" onclick="changeBox('box-4')"><p id="box-4-text"> CS and Music </p></div>
+						</div>
+						<div class="fact-message">
+							<p class="fact-text"> Write me at </p>
+							<div class="box box-5" onclick="changeBox('box-5')"><p id="box-5-text"><a href="mailto: edgar.palomino@nyu.edu"> edgar.palomino@nyu.edu </a></p></div>
+						</div>
+					</div>
+					<a class="button home-button" onclick="scrollToScreen('home')"> Go Back </a>
+				</div>
+				<div class="bottom-part">
+					<div class="bottom-left-triangle"></div>
+					<div class="bottom-right-triangle"></div>
+				</div>
+			</div>
+			<div id="home-screen" class="screen">
+				<div class="top-part-with-button">
+					<div class="top-left-triangle"></div>
+					<a class="button hobbies-button" onclick="scrollToScreen('hobbies')"> My Hobbies </a>
+					<div class="top-right-triangle"></div>
+				</div>
+				<div class="title-part">
+					<a class="button info-button" onclick="scrollToScreen('info')"> My Info </a>
+					<div class="home-message">
+						<h1 class="welcome-text"> Welcome to my Portfolio! </h1>
+						<p class="prompt-text"> Click the buttons on the screen to find out more about me! </p>
+					</div>
+					<a class="button sites-button" onclick="scrollToScreen('sites')"> My Sites </a>
+				</div>
+				<div class="bottom-part-with-button">
+					<div class="bottom-left-triangle"></div>
+					<a class="button music-button" onclick="scrollToScreen('music')"> My Music </a>
+					<div class="bottom-right-triangle"></div>
+				</div>
+			</div>
+			<div id="sites-screen" class="screen">
+				<div class="top-part">
+					<div class="top-left-triangle"></div>
+					<div class="top-right-triangle"></div>
+				</div>
+				<div class="sites-content">
+					<a class="button home-button" onclick="scrollToScreen('home')"> Go Back </a>
+					<div class="sites-webpages">
+						<p class="sites-message"> Click the images below to visit some of the webpages I've created this year! </p>
+						<div class="sites-links">
+							<div class="left-links">
+								<!-- BUSCA LAS IMAGENES DURANTE LA CLASEEE !-->
+								<a href="https://edgarpalomino.github.io/music-battle/index.html"><img src="Music Battle.png" class="link-photo"></a>
+								<a href="https://edgarpalomino.github.io/space-mission/"><img src="Space Mission.png" class="link-photo"></a>
+							</div>
+							<div class="sites-descriptions">
+								<p class="site-1-description"> Music Battle: A simple website to host my 30MFF Film "Music Battle" </p>
+								<p class="site-2-description"> Space Mission: A fun comic about the layers of the Earth's atmosphere </p>
+								<p class="site-3-description"> Student Life: A calm sound piece about the daily life of an NYUAD student </p>
+								<p class="site-4-description"> The Rascals: A silly video piece about a group of misfits making a music video </p>
+							</div>
+							<div class="right-links">
+								<a href="https://edgarpalomino.github.io/student-life/"><img src="Student Life.png" class="link-photo"></a>
+								<a href="https://edgarpalomino.github.io/the-rascals/"><img src="The Rascals.png" class="link-photo"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-part">
+					<div class="bottom-left-triangle"></div>
+					<div class="bottom-right-triangle"></div>
+				</div>
+			</div>
+		</content>
+		<content class="horizontal-screens">
+			<div id="music-screen" class="screen">
+				<div class="top-part-with-button">
+					<div class="top-left-triangle"></div>
+					<a class="button home-button" onclick="scrollToScreen('home')"> Go Back </a>
+					<div class="top-right-triangle"></div>
+				</div>
+				<div class="music-content">
+					<p id="music-description"> Etude in E Major - Chopin: This is a recording I made for my piano teacher's online concert in December of 2021 </p>
+					<div class="music-recordings">
+						<p class="music-message"> Click the reproduction buttons below to listen to some of my piano recordings! </p>
+						<div class="recording-buttons-1">
+							<a id="play" class="reproduction-button" onclick="playAudio()"> Play </a>
+							<a id="pause" class="reproduction-button" onclick="pauseAudio()"> Pause </a>
+						</div>
+						<div class="recording-buttons-2">
+							<a id="replay" class="reproduction-button" onclick="replayAudio()"> Replay </a>
+							<a id="next" class="reproduction-button" onclick="nextAudio()"> Next </a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-part">
+					<div class="bottom-left-triangle"></div>
+					<div class="bottom-right-triangle"></div>
+				</div>
+			</div>
+		</content>
+	</content>
+	<script>
+		history.scrollRestoration = "manual";
+		var currentScreen = document.getElementById("home-screen");
+		currentScreen.scrollIntoView();
+
+		var etudeRecording = new Audio("Etude Recording.mp3");
+		var asturiasRecording = new Audio("Asturias Recording.m4a");
+		var pathetiqueRecording = new Audio("Pathetique Recording.mp3");
+
+		var currentHobby = 0;
+		var currentRecording = 0;
+		var playingAudio = etudeRecording;
+
+		var hobbies = [["Dogs.jpg", "When I'm back home in Peru, I like to play and spend lots of time with my two dogs Leo and Klaus!"],
+						["Friends.jpg", "During the weekends, I like to do fun stuff with friends such as going somewhere nice to eat!"],
+						["Videogames.jpg", "When I have some free time, I like to play videogames (especially Rocket League)!"]];
+
+		var recordings = [[etudeRecording, "Etude in E Major - Chopin: This is a recording I made for my piano teacher's online concert in December of 2021"],
+							[asturiasRecording, "Asturias - Albeniz: This is a recording I made for my IB Performance component in November of 2020"],
+							[pathetiqueRecording, "Sonata Pathetique - Beethoven: This is a recording I made for my piano teacher's online concert in December of 2020"]];
+
+		window.addEventListener("resize", function () { currentScreen.scrollIntoView(); });
+
+		function scrollToScreen(newScreenName) {
+			let newScreen = document.getElementById(newScreenName + "-screen");
+			currentScreen = newScreen;
+			newScreen.scrollIntoView({behavior: "smooth"});
+		}
+
+		function changeBox(boxClicked) {
+			let boxText = document.getElementById(boxClicked + "-text");
+
+			if (boxText.classList.contains("visible")) {
+				boxText.style.visibility = "hidden";
+				boxText.classList.remove("visible");
+			} else if (!boxText.classList.contains("visible")) {
+				boxText.style.visibility = "visible";
+				boxText.classList.add("visible");
+			}
+		}
+
+		function changeHobby() {
+			currentHobby = (currentHobby + 1)%3;
+			document.getElementById("hobby-description").innerHTML = hobbies[currentHobby][1];
+			document.getElementById("hobby-photo").src = (hobbies[currentHobby][0]);
+		}
+
+		function nextAudio() {
+			currentRecording = (currentRecording + 1)%3;
+			document.getElementById("music-description").innerHTML = recordings[currentRecording][1];
+			playingAudio = recordings[currentRecording][0];
+		}
+
+		function playAudio() { playingAudio.play(); }
+		function pauseAudio() { playingAudio.pause(); }
+		function replayAudio() { playingAudio.currentTime = 0; }
+
+	</script>
+
+</body>
+</html>
